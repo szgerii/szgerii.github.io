@@ -1,0 +1,60 @@
+* {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo-container {
+    display: flex;
+    align-items: center;
+    font-size: 4rem;
+}
+
+#logo-container > span {
+    color: #AC1081;
+}
+
+#scrolling-logo-container {
+    height: 5rem;
+    overflow: hidden;
+}
+
+#scrolling-logo-container ul {
+    list-style-type: none;
+    margin: 0 0.625rem;
+    padding: 0;
+    animation: scrollUp 8s infinite;
+}
+
+#scrolling-logo-container ul li {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 5rem;
+    font-weight: 700;
+}
+
+@keyframes scrollUp {
+    0%, 15% {
+        transform: translateY(0);
+    }
+
+    25%, 40% {
+        transform: translateY(-25%);
+    }
+
+    50%, 65% {
+        transform: translateY(-50%);
+    }
+    
+    75%, 90% {
+        transform: translateY(-75%);
+    }
+}
