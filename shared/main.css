@@ -474,7 +474,6 @@ footer ul#footer-links li:first-of-type {
 .scra-swift-img {
     height: var(--scra-target-height);
     object-fit: contain;
-    margin-right: calc(var(--scra-target-height) / 4);
     object-position: right center;
 }
 

@@ -319,6 +319,10 @@ summary {
     --scra-target-height: 3.5rem;
 }
 
+#contact-destination {
+    scroll-margin-top: calc(4rem + 6.375rem);
+}
+
 @media screen and (max-width: 992px) {
     main {
         width: 85%;
@@ -489,5 +493,9 @@ summary {
     .form-result>div {
         margin-top: 2em;
         --scra-target-height: calc((40vw / 270) * 60);
+    }
+
+    #contact-destination {
+        scroll-margin-top: calc(2rem + 3.75rem);
     }
 }

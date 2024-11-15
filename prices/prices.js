@@ -25,6 +25,8 @@ const dev_price_estimate = document.querySelector("#dev-price-estimate");
 const design_price_estimate = document.querySelector("#design-price-estimate");
 const total_price_estimate = document.querySelector("#total-price-estimate");
 
+const contactLink = document.querySelector("#nav-contact");
+
 let current_dev_btn = null;
 let current_design_btn = null;
 
@@ -49,6 +51,12 @@ for (const option of swift_options) {
         radioBtn.click();
     });
 }
+
+contactLink.addEventListener("click", (e) => {
+    if (nav.classList.contains("open")) {
+        nav.classList.remove("open");
+    }
+});
 
 form.addEventListener("submit", (e) => {
     e.preventDefault();
