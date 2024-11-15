@@ -413,6 +413,10 @@ footer ul#footer-links li:first-of-type {
         margin: 0;
         vertical-align: center;
         text-decoration: none;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        user-select: none;
+        -webkit-tap-highlight-color: transparent;
     }
 
     #footer-top h4 {
@@ -433,6 +437,12 @@ footer ul#footer-links li:first-of-type {
 
     #footer-top #arrow-dark {
         display: block;
+    }
+
+    #footer-top, #footer-top * {
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        user-select: none;
     }
 
     .swift-h1 {
@@ -474,6 +484,12 @@ footer ul#footer-links li:first-of-type {
     object-fit: cover;
     object-position: left 0.5%;
     animation: scraScrollUp 8s infinite;
+}
+
+.scra-container, .scra-container * {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
 }
 
 /*
